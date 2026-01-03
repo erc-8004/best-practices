@@ -1,0 +1,88 @@
+{
+  "type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
+  "name": "InsightEngine",
+  "description": "A business intelligence agent that transforms raw data into actionable insights. Performs comprehensive data analysis, generates interactive visualizations, creates detailed reports, and provides predictive analytics to help businesses make data-driven decisions. Integrates with popular data sources and BI tools.",
+  "image": "https://example.com/insight-engine-icon.png",
+  "endpoints": [
+    {
+      "name": "MCP",
+      "endpoint": "https://api.insightengine.example.com/mcp",
+      "version": "2025-06-18",
+      "mcpTools": [
+        "analyze_dataset",
+        "generate_chart",
+        "create_dashboard",
+        "run_sql_query",
+        "calculate_statistics",
+        "detect_anomalies",
+        "forecast_trends"
+      ],
+      "mcpPrompts": [
+        "executive_summary",
+        "detailed_analysis_report",
+        "data_quality_assessment"
+      ],
+      "mcpResources": [
+        "connected_databases",
+        "historical_reports",
+        "data_dictionaries",
+        "visualization_templates"
+      ]
+    },
+    {
+      "name": "A2A",
+      "endpoint": "https://api.insightengine.example.com/a2a",
+      "version": "0.30",
+      "a2aSkills": [
+        "data_analysis",
+        "visualization",
+        "reporting"
+      ]
+    },
+    {
+      "name": "OASF",
+      "endpoint": "https://github.com/agntcy/oasf/",
+      "version": "v0.8.0",
+      "skills": [
+        "tabular_text/tabular_classification",
+        "tabular_text/tabular_regression",
+        "tabular_text/time_series_forecasting",
+        "analytical_skills/data_interpretation",
+        "analytical_skills/predictive_analytics",
+        "analytical_skills/statistical_analysis",
+        "data_engineering/data_cleaning",
+        "data_engineering/data_transformation",
+        "data_engineering/feature_engineering",
+        "retrieval_augmented_generation/data_synthesis"
+      ],
+      "domains": [
+        "technology/data_science",
+        "technology/business_intelligence",
+        "finance_and_business/financial_analysis",
+        "finance_and_business/operations_management",
+        "marketing/marketing_analytics"
+      ]
+    },
+    {
+      "name": "ENS",
+      "endpoint": "insightengine.eth",
+      "version": "v1"
+    },
+    {
+      "name": "agentWallet",
+      "endpoint": "eip155:1:0x3334567890123456789012345678901234567890"
+    }
+  ],
+  "registrations": [
+    {
+      "agentId": 300,
+      "agentRegistry": "eip155:11155111:0x8004a6090Cd10A7288092483047B097295Fb8847"
+    }
+  ],
+  "supportedTrusts": [
+    "reputation",
+    "crypto-economic"
+  ],
+  "active": true,
+  "x402support": true
+}

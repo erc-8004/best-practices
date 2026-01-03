@@ -1,0 +1,95 @@
+{
+  "type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
+  "name": "CreativeMuse",
+  "description": "A multimodal creative agent that generates original content across text, images, music, and video. Capable of text-to-image generation, music composition, style transfer, video editing, and creative writing. Perfect for artists, marketers, and content creators looking to augment their creative workflow with AI-powered tools.",
+  "image": "https://example.com/creative-muse-avatar.png",
+  "endpoints": [
+    {
+      "name": "MCP",
+      "endpoint": "https://api.creativemuse.example.com/mcp",
+      "version": "2025-06-18",
+      "mcpTools": [
+        "generate_image",
+        "compose_music",
+        "create_video",
+        "apply_style_transfer",
+        "enhance_photo",
+        "generate_story",
+        "create_marketing_copy"
+      ],
+      "mcpPrompts": [
+        "creative_brainstorm",
+        "style_guide",
+        "content_iteration"
+      ],
+      "mcpResources": [
+        "style_library",
+        "music_samples",
+        "inspiration_gallery",
+        "project_templates"
+      ]
+    },
+    {
+      "name": "A2A",
+      "endpoint": "https://api.creativemuse.example.com/a2a",
+      "version": "0.30",
+      "a2aSkills": [
+        "image_generation",
+        "music_composition",
+        "creative_writing"
+      ]
+    },
+    {
+      "name": "OASF",
+      "endpoint": "https://github.com/agntcy/oasf/",
+      "version": "v0.8.0",
+      "skills": [
+        "images_computer_vision/text_to_image",
+        "images_computer_vision/image_to_image",
+        "images_computer_vision/image_classification",
+        "images_computer_vision/object_detection",
+        "audio/text_to_speech",
+        "audio/text_to_audio",
+        "audio/audio_classification",
+        "multi_modal/visual_question_answering",
+        "multi_modal/image_text_to_text",
+        "natural_language_processing/text_generation",
+        "natural_language_processing/summarization"
+      ],
+      "domains": [
+        "creative_arts/visual_arts",
+        "creative_arts/music",
+        "creative_arts/design",
+        "marketing/content_creation",
+        "marketing/advertising",
+        "entertainment/media_production"
+      ]
+    },
+    {
+      "name": "ENS",
+      "endpoint": "creativemuse.eth",
+      "version": "v1"
+    },
+    {
+      "name": "DID",
+      "endpoint": "did:web:creativemuse.example.com",
+      "version": "v1"
+    },
+    {
+      "name": "agentWallet",
+      "endpoint": "eip155:1:0x4444567890123456789012345678901234567890"
+    }
+  ],
+  "registrations": [
+    {
+      "agentId": 400,
+      "agentRegistry": "eip155:11155111:0x8004a6090Cd10A7288092483047B097295Fb8847"
+    }
+  ],
+  "supportedTrusts": [
+    "reputation",
+    "crypto-economic"
+  ],
+  "active": true,
+  "x402support": true
+}

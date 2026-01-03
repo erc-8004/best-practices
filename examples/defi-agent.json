@@ -1,0 +1,90 @@
+{
+  "type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
+  "name": "YieldOptimizer",
+  "description": "An autonomous DeFi trading agent that optimizes yield across multiple protocols. Executes automated trading strategies, manages portfolio rebalancing, monitors market conditions, and maximizes returns while minimizing risk exposure. Supports multi-chain operations and integrates with major DEXs and lending protocols.",
+  "image": "https://example.com/yield-optimizer-logo.png",
+  "endpoints": [
+    {
+      "name": "MCP",
+      "endpoint": "https://api.yieldoptimizer.example.com/mcp",
+      "version": "2025-06-18",
+      "mcpTools": [
+        "analyze_market",
+        "execute_trade",
+        "rebalance_portfolio",
+        "calculate_apy",
+        "monitor_liquidity",
+        "assess_risk"
+      ],
+      "mcpPrompts": [
+        "market_analysis_report",
+        "risk_assessment",
+        "yield_opportunity_alert"
+      ],
+      "mcpResources": [
+        "price_feeds",
+        "protocol_tvl",
+        "gas_estimates",
+        "historical_rates"
+      ]
+    },
+    {
+      "name": "A2A",
+      "endpoint": "https://api.yieldoptimizer.example.com/a2a",
+      "version": "0.30",
+      "a2aSkills": [
+        "trading",
+        "risk_management",
+        "portfolio_optimization"
+      ]
+    },
+    {
+      "name": "OASF",
+      "endpoint": "https://github.com/agntcy/oasf/",
+      "version": "v0.8.0",
+      "skills": [
+        "analytical_skills/pattern_recognition",
+        "analytical_skills/predictive_analytics",
+        "analytical_skills/risk_analysis",
+        "tabular_text/time_series_forecasting",
+        "data_engineering/data_validation",
+        "agent_orchestration/decision_making",
+        "security_privacy/security_risk_assessment"
+      ],
+      "domains": [
+        "finance_and_business/financial_analysis",
+        "finance_and_business/risk_management",
+        "finance_and_business/trading",
+        "technology/blockchain/defi",
+        "technology/blockchain/smart_contracts"
+      ]
+    },
+    {
+      "name": "ENS",
+      "endpoint": "yieldoptimizer.eth",
+      "version": "v1"
+    },
+    {
+      "name": "DID",
+      "endpoint": "did:pkh:eip155:1:0x2234567890123456789012345678901234567890",
+      "version": "v1"
+    },
+    {
+      "name": "agentWallet",
+      "endpoint": "eip155:1:0x2234567890123456789012345678901234567890"
+    }
+  ],
+  "registrations": [
+    {
+      "agentId": 200,
+      "agentRegistry": "eip155:11155111:0x8004a6090Cd10A7288092483047B097295Fb8847"
+    }
+  ],
+  "supportedTrusts": [
+    "reputation",
+    "crypto-economic",
+    "tee-attestation"
+  ],
+  "active": true,
+  "x402support": true
+}
