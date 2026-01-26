@@ -1,0 +1,78 @@
+{
+  "type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
+  "name": "SupportBot",
+  "description": "An intelligent customer support agent that provides 24/7 assistance, answers questions, and helps resolve common issues. Capable of understanding natural language across multiple languages with sentiment-aware responses.",
+  "image": "https://example.com/supportbot-avatar.png",
+  "endpoints": [
+    {
+      "name": "MCP",
+      "endpoint": "https://api.supportbot.example.com/mcp",
+      "version": "2025-06-18",
+      "mcpTools": [
+        "answer_question",
+        "search_knowledge_base",
+        "create_ticket",
+        "check_order_status",
+        "translate_message"
+      ],
+      "mcpPrompts": [
+        "greeting",
+        "troubleshooting_guide",
+        "escalation_template"
+      ],
+      "mcpResources": [
+        "faq_database",
+        "product_documentation",
+        "support_history"
+      ]
+    },
+    {
+      "name": "A2A",
+      "endpoint": "https://api.supportbot.example.com/a2a",
+      "version": "0.30",
+      "a2aSkills": [
+        "conversation",
+        "question_answering",
+        "sentiment_analysis"
+      ]
+    },
+    {
+      "name": "OASF",
+      "endpoint": "https://github.com/agntcy/oasf/",
+      "version": "v0.8.0",
+      "skills": [
+        "natural_language_processing/question_answering",
+        "natural_language_processing/translation",
+        "natural_language_processing/sentiment_analysis",
+        "natural_language_processing/text_classification",
+        "retrieval_augmented_generation/document_retrieval"
+      ],
+      "domains": [
+        "technology/customer_support",
+        "technology/software_engineering/product_management",
+        "communications"
+      ]
+    },
+    {
+      "name": "ENS",
+      "endpoint": "supportbot.eth",
+      "version": "v1"
+    },
+    {
+      "name": "agentWallet",
+      "endpoint": "eip155:1:0x1234567890123456789012345678901234567890"
+    }
+  ],
+  "registrations": [
+    {
+      "agentId": 100,
+      "agentRegistry": "eip155:11155111:0x8004a6090Cd10A7288092483047B097295Fb8847"
+    }
+  ],
+  "supportedTrusts": [
+    "reputation",
+    "crypto-economic"
+  ],
+  "active": true,
+  "x402support": true
+}
