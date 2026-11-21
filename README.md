@@ -4,5 +4,6 @@ Use these guides:
 
 - **Registration**: [Registration.md](Registration.md)
 - **Reputation & Feedback**: [Reputation.md](Reputation.md)
+- **Validation**: [Validation.md](Validation.md)
 - **Reference spec (draft)**: [src/ERC8004SPEC.md](src/ERC8004SPEC.md)
 
